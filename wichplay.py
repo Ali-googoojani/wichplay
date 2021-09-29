@@ -24,7 +24,7 @@ def get_list_of_sounds_split():
                 
         for dic in range(0,len(keys)):
             maindict[keys[dic]]=allnames[dic]
-        print(pyfiglet.figlet_format("wichplay\n"),"your config:",maindict,"\n","Control Keys{'P':'PAUSE','C':'Contniue','0':'OFF'}")
+        print(pyfiglet.figlet_format("wichplay\n"),"your config:",maindict,"\n Control Keys{'P':'PAUSE','C':'Contniue','0':'OFF'}")
 
     except FileNotFoundError:
         print('not found {0}'.format(filename))
