@@ -1,5 +1,5 @@
 <h1>wichplay</h1>
-<strong>A</strong>simple script for play audio and music by press keys on keyboard
+<strong>A</strong> simple script for play audio and music by press keys on keyboard
 <h1>How to Use:</h1>
 <strong>Frist:</strong>install requirements.txt file <code>pip install -r requirements.txt</code>
 <br>
