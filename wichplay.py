@@ -14,7 +14,7 @@ def get_list_of_sounds_split():
     try:
         with open('config/ListOfSound.txt','r') as File:
 
-           fileContent=File.read().split('\t')
+           fileContent=File.read().split('\n')
 
            for i in range(0,len(fileContent)):
                 if(".mp3" in fileContent[i] or ".ogg" in fileContent[i] or ".wav" in fileContent[i]):
@@ -23,7 +23,10 @@ def get_list_of_sounds_split():
                    keys.append(fileContent[i].upper()) 
                 
         for dic in range(0,len(keys)):
-            maindict[keys[dic]]=allnames[dic]
+            try:
+                maindict[keys[dic]]=allnames[dic]
+            except:
+                print("")
         print(pyfiglet.figlet_format("wichplay\n"),"your config:",maindict,"\n Control Keys{'P':'PAUSE','C':'Contniue','0':'OFF'}")
 
     except FileNotFoundError:
@@ -56,7 +59,7 @@ def play_sound():
             else:
                 mixer.music.unpause()
         except ValueError:
-            print(" ")
+            print("")
 if(__name__=="__main__"):   
     get_list_of_sounds_split()
     play_sound()
