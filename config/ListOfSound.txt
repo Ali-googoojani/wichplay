@@ -1,1 +1,1 @@
-doorbell.wav|A|positive-notification.wav|B|sci-fi-reject.wav|C
+doorbell.wav  A  positive-notification.wav  B  sci-fi-reject.wav  C
