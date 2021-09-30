@@ -1,7 +1,7 @@
 <h1>wichplay</h1>
 <strong>A</strong> simple script for play audio and music by press keys on keyboard
 <h1>How to Use:</h1>
-<strong>Frist:</strong>install requirements.txt file <code>pip install -r requirements.txt</code>
+<strong>Frist:</strong>install requirements.txt file '''bash pip install -r requirements.txt'''
 <br>
 <strong>Second:</strong>Enter Audio files to Sounds folder and this script just support 3 format: <code>.mp3</code><code>.wav</code><code>.ogg</code>
 <br>
